@@ -105,14 +105,11 @@ const handleTap = (event: React.MouseEvent<HTMLDivElement>): void => {
         {
           currentIndex < 2 ? 
           <div className="w-full h-full flex items-center flex-wrap justify-between">
-            <div className="text-gray-700 w-full font-medium text-center">To: {to}</div>
-            <div className="text-gray-700 w-full text-3xl italic text-center font-semibold">{stories[currentIndex].text}</div>
-            <div className="text-gray-700 w-full font-medium text-center">From: {from}</div>
+            // TODO: CREATE PANTUN TEXT
           </div>
           :
           <div className="flex flex-col items-center gap-4">
-            <p className="text-gray-700 text-3xl italic font-semibold text-center">{stories[currentIndex].text}</p>
-            <button onClick={() => navigate('/form')} className="w-1/2 border text-gray-700 bg-white border-gray-700 rounded-md px-1.5 py-2">Balas Pantun</button>
+            // TODO: CREATE LAST PAGE WITH BUTTON
           </div>
         }
       </div>
